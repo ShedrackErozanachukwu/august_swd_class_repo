@@ -1,5 +1,247 @@
-.juadebMT {
+:root {
+  /* Colors */
+  --main_text: #161c2d;
+  --green_subscript_text: #68d585;
+  --green_card_bg: #83ffa3;
+  --main_blue: #407bff;
+  --btn_bg: #473bf0;
+  --main_orange: #f64b4b;
+
+  /* Font Family */
+  --rubik: "Rubik", sans-serif;
+  --gilroy_regular: "Gilroy_Regular", sans-serif;
+  --gilroy_medium: "Gilroy_Medium", sans-serif;
+  --gilroy_semibold: "Gilroy_Semibold", sans-serif;
+  --gilroy_bold: "Gilroy_Bold", sans-serif;
+  --gilroy_black: "Gilroy_Black", sans-serif;
+  --gilroy_light: "Gilroy_Light", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@font-face {
+  font-family: "Gilroy_Regular";
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Medium";
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Semibold";
+  src: url(./assets/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Bold";
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Black";
+  src: url(./assets/fonts/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: "Gilroy_Light";
+  src: url(./assets/fonts/Gilroy-Light.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--gilroy_regular);
+}
+
+nav .navbar-brand,
+footer .navbar-brand {
+  font-family: var(--gilroy_semibold);
+}
+
+.navbar-nav .nav-item {
+  font-family: var(--gilroy_semibold);
+}
+
+nav button {
+  background-color: var(--btn_bg) !important;
+  color: #fff !important;
+  font-family: var(--gilroy_semibold);
+}
+
+.special {
+  margin-top: 18px;
+  background-color: var(--btn_bg) !important;
+  color: #fff !important;
+  font-family: var(--gilroy_semibold);
+  font-size: 17px;
+}
+
+.special_empty {
+  margin-top: 18px;
+  background-color: transparent !important;
+  color: #000 !important;
+  font-family: var(--gilroy_semibold);
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+
+.hero_img {
+  width: 45%;
+}
+
+.btn-custom {
+  width: 40%;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .hero_img {
+    width: 100%;
+  }
+}
+
+.small_text {
+  font-size: 13px !important;
+  font-family: var(--gilroy_semibold);
+}
+
+.hero_heading {
+  font-size: 50px;
+  font-family: var(--gilroy_bold);
+  margin-top: 20px;
+}
+
+.hero_details {
+  font-size: 18px;
+  width: 40%;
+  margin-inline: auto;
+  font-family: var(--gilroy_regular);
+  color: gray;
+}
+
+.info_section {
+  background-color: #f4f7fa;
+}
+
+.info_section .info_details {
+  font-size: 46px;
+  font-family: var(--gilroy_semibold);
+}
+
+.info_section .info_details_p {
+  font-size: 19px;
+  color: gray;
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .hero_details {
+    width: 100%;
+  }
+
+  .info_section .info_details_p {
+    width: 90%;
+  }
+
+  p.small {
+    width: 100% !important;
+  }
+}
+
+.overBlue {
+  width: 20px;
+  height: 20px;
+}
+
+.earpuds {
+  width: 42px;
+  height: 42px;
+}
+
+.comfort {
+  font-family: var(--gilroy_semibold);
+}
+
+.comfortable_section h3,
+.comfortable_section p {
+  padding: 0rem 10rem 0rem 10rem;
+}
+
+.comfortable_section .cs_details {
+  font-size: 19px;
+  color: #ddd;
+}
+
+.comfortable_section h3 {
+  font-family: var(--gilroy_bold);
+  font-size: 48px;
+}
+
+.names {
+  padding: 0rem 10rem 0rem 10rem;
+}
+
+.names,
+.quote {
   display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  flex-direction: column;
+}
+
+.quote p {
+  width: 100%;
+}
+
+.quote {
+  width: 100%;
+}
+
+.names img {
+  width: 54px;
+  height: 54px;
+}
+
+.trendy_designs .hero_heading {
+  font-size: 40px;
+}
+
+.trendy_designs .hero_details {
+  width: 100%;
+}
+
+.gya_heading {
+  font-family: var(--gilroy_semibold);
+  font-size: 40px;
+}
+
+.gya_details {
+  width: 30%;
+  margin-inline: auto;
+  color: gray;
+}
+@media (max-width: 1024px) {
+  .comfortable_section h3,
+  .comfortable_section p {
+    padding: 0rem 40px 0rem 40px;
+  }
+  .comfortable_section h3 {
+    font-family: var(--gilroy_bold);
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+  }
+  .comfortable_section .cs_details {
+    font-size: 17px;
+    color: #ddd;
+    padding: 0;
+    margin: 0;
+  }
+  .names {
+    padding: 0rem 40px 0rem 40px;
+  }
+  .trendy_designs .container,
+  .gya_details {
+    width: 100% !important;
+  }
 }

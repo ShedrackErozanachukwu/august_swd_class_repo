@@ -6,7 +6,7 @@
 2. Git add . - To start tracking our project files to the staging area.
 3. Git Commit - To add unique labels (both technical e.g ab123hf or named e.g "feat: added new files") to the project files in our staging area.
 4. _Git branch -M main_ - This helps us change the current branch from "Master" to "Main" (we do it once at the start of the entire process) (terminal process)
-5. _Git remote add origin <link>_ - This states and prepares the project to the cloud repo we're trying to connect to. (we do it once at the start of the entire process) (terminal process)
+5. _Git remote add origin <link>_ - This states and prepares the project to the cloud repo we're trying to connect to. (we do it once at the start of the ent`ire process) (terminal process)
 6. _Git push -u origin main_ - This allows us to now push (or publish) the files from the staging area to the online repo, and the U represents (--upstream) (we do it once at the start of the entire process). (terminal process)
 7. Git push - we do this anytime we want to push changes to the virtual/remote or online repo.
 8. Git status - Helps us check the current stage in our git processes.
