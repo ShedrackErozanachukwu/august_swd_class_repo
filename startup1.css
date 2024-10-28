@@ -4,6 +4,13 @@ body {
     font-family: "DM Sans", sans-serif;
     scroll-behavior: smooth;
   }
-  .btn-success {
-    background-color: #25DAC5;
+  .btn-rukky {
+    background-color: #25DAC5 !important;
   }
+  .btn-rukky-sec {
+    color: #25DAC5 !important;
+  }
+  .custom-color {
+    color: #1E0E62 !important;
+  }
+  
