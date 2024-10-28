@@ -4,10 +4,19 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-.btn_color {
+.btnb_color {
   background-color: #25DAC5;
+}
+.btn_color {
+  color: #25DAC5;
 }
 
 .logo {
   color: #1e0e62;
+}
+
+.marginl{
+
+  @media (min-width: 760px) {
+    margin-left: 200px;  }
 }
