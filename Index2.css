@@ -10,6 +10,30 @@ body {
   background-color: #482BE7;
 }
 
+.btn2_bg{
+  background-color: #25DAC5;
+}
+
 /* .btn1:hover{
   border: 2px solid black;
 } */
+
+.fz{
+  font-size: 50px !important;
+  font-weight: 600 !important;
+  width: 50% !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.width_c{
+  width: 40% !important;
+}
+.width_s{
+  width: 300px !important;
+  font-size: 12px;
+  margin-bottom: 500px !important;
+}
+
+.bg_tp{
+  background-color: transparent !important;
+}
