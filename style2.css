@@ -1,0 +1,25 @@
+.txt_1{
+    color: #1E0E62;
+    font-size: 24px;
+}
+
+.txt_2{
+    color: #1514397b;
+    font-size: 18px;
+}
+
+.primary_btn{
+    background-color: #25DAC5;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 5px 21px;
+    font-size: 18px;
+}
+
+.sec_btn{
+    color: #1514397b;
+    font-size: 18px;
+
+}
+
