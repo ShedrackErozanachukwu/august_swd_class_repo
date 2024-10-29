@@ -10,9 +10,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- CSS  -->
     <style>
+        body {
+            overflow-x: hidden;
+        }
         .linne_bg {
             background: #2F1893 !important;
-            height: 100vh;
+            height: auto;
         }
         .linne_text_bold {
             font-weight: 900;
@@ -73,6 +76,17 @@
             color: #ccc;
             font-size: 16px;
         }
+        .linne_grad {
+            background: linear-gradient(to bottom, #0088ff, #00ccff, #44ffff, #ccffcc, #ffcc44, #ff9933, #ff6600)!important;
+            color: #ff04f7;
+            font-weight: 900;
+        }
+        @media (max-width: 991px) {
+            .pagination {
+                width: 100% !important;
+                justify-content: space-between !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -107,6 +121,16 @@
                 <small>By signing up, you agree to the Terms of Service</small>
             </form>
         </section>
+        <div aria-label="Page navigation example">
+            <ul class="pagination justify-content-end p-5 ">
+                <li class="page-item">
+                    <a class="page-link linne_grad" data-bs-toggle="popover" title="Header 1" href="../header-1/index.html"><span>&laquo;</span>  Previous </a>
+                </li>
+                <li class="page-item disabled">
+                    <a class="page-link linne_grad" data-bs-toggle="popover" title="Header 2"> Next<span>&raquo;</span></a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <!-- Bootstrap JS  -->
