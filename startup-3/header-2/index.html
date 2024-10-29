@@ -12,6 +12,7 @@
     <style>
         .linne_bg {
             background: #2F1893 !important;
+            height: 100vh;
         }
         .linne_text_bold {
             font-weight: 900;
@@ -29,35 +30,83 @@
             color: #fff;
             padding: 8px 20px;
             @media (max-width: 991px) {
-                /* display: block !important; */
-                width: 100% !important;
+                width: 80% !important;
+                padding: 15px 25px;
             }
+        }
+        .green {
+             background-color: #25DAC5 !important;
         }
         .linne_lgbg {
             background: linear-gradient(to right, #716565, #f47a74, #4e4e53) !important;
         
         }
+        .linne_h1 {
+            font-size: 62px;
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            @media (max-width : 991px) {
+                font-size: 45px;
+            }
+        }
+        .linne_p {
+            font-size: 22px;
+            line-height: 32px;
+            width: 90% ;
+            margin: auto;
+            color: #fff !important;
+            font-weight: 500;
+        }
+        .linne_input {
+            padding: 10px 25px;
+            border-radius: 999px;
+            border: 1.5px solid #aaa;
+            background: transparent;
+            margin-bottom: 2rem;
+            @media (max-width: 991px) {
+                width: 80%;
+                padding: 13px 25px;
+            }
+        }
+        small {
+            color: #ccc;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
     <header class="linne_bg">
-        <nav class=" container navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand linne_text_bold">Startup 3</a>
-                <button class="navbar-toggler text-danger border-success linne_lgbg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse"  id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-3">
-                            <a class="nav-link active linne_text" aria-current="page" href="#">Subscribe</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link linne_text" href="#">Features</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-success linne_btn_primary">Sign Up</button>
+        <nav class=" container navbar navbar-expand-lg p-4 navbar-light">
+            <a class="navbar-brand linne_text_bold">Startup 3</a>
+            <button class="navbar-toggler text-danger border-success linne_lgbg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse"  id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active linne_text" aria-current="page" href="#">Subscribe</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link linne_text" href="#">Features</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-success linne_btn_primary">Sign Up</button>
+            </div>
+        </nav>
+        <section class="container col-lg-6 text-center">
+            <div class="mt-5 mb-5">
+                <h1 class="linne_h1">Let’s make design fast and easy</h1>
+                <p class="linne_p">The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.</p>
+            </div>
+            <form>
+                <div class="mb-4">
+                    <input type="email" name="Email" class="linne_input" placeholder="Your email">
+                    <button type="submit" class="linne_btn_primary green">Send</button>
                 </div>
-          </nav>
+                <small>By signing up, you agree to the Terms of Service</small>
+            </form>
+        </section>
     </header>
 
     <!-- Bootstrap JS  -->
