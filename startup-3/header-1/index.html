@@ -41,8 +41,28 @@
         .li {
             padding: 10px 0px;
         }
+        .linne_h1 {
+            font-size: 72px;
+            color: #1E0E62;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+        .linne_p {
+            font-size: 22px;
+            line-height: 32px;
+            width: 48%;
+            margin: auto;
+            color: #15143966 !important;
+            font-weight: 700;
+        }
+        .linne_btnc{
+            color: #25DAC5;
+        }
         
         @media (max-width: 992px) {
+            header {
+                width: 100%;
+            }
            .d-flex {
                 flex-direction: column;
                 gap: 2rem;
@@ -58,6 +78,16 @@
                 padding: 15px; 
                 font-weight: 600;               
             }
+            section .d-flex{
+                width: 100% !important;
+            }
+            .linne_h1{
+                font-size: 48px;
+                width: 100%;
+            }
+            .linne_p{
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -70,7 +100,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse ms-5 linne_nav_items " id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  linne_ul gap-4">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  linne_ul gap-2">
                         <li class="nav-item li">
                             <a class="nav-link li active " aria-current="page" href="#">Home</a>
                         </li>
@@ -94,6 +124,16 @@
               </div>
             </div>
           </nav>
+          <section class="container text-center">
+            <div class="mt-5 mb-5">
+                <h1 class="linne_h1">Startup Framework</h1>
+                <p class="linne_p">We made it so beutiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection! </p>
+            </div>
+            <div class="d-flex flex-column w-25 m-auto">
+                <button type="button" class="btn btn-success linne_btn_primary">Purchase Now for $248</button>
+                <button class="btn me-2 linne_btn linne_btnc" type="button"> Learn More</button>
+            </div>
+          </section>
     </header>
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
